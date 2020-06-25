@@ -10,13 +10,14 @@
     src: url("../fonts/garamond/GaramondRoman.ttf");
 }
 
-.centerImages img {
+.centerImages img, .images img {
     animation: fadeIn ease 8s;
     -webkit-animation: fadeIn ease 8s;
     -moz-animation: fadeIn ease 8s;
     -o-animation: fadeIn ease 8s;
     -ms-animation: fadeIn ease 8s;
 }
+
 @keyframes fadeIn {
     0% {opacity:0.5;}
     100% {opacity:1;}
