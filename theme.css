@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/helvetica_neue/HelveticaNeueMedium.ttf");
+    src: url("../fonts/helvetica_neue/HelveticaNeue.ttf");
+    src: url("../fonts/helvetica_neue/HelveticaNeueLight.ttf");
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url("../fonts/garamond/GaramondRoman.ttf");
+}
+
+html {
+    height: 100%;
+    background-image: linear-gradient(to right top, #ffffff, #f8f8f9, #f2f2f4, #ebebee, #e4e5e9, #dadee7, #d0d7e6, #c5d0e4, #b5c6e5, #a6bce6, #96b2e6, #86a8e7);
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    font-family: Helvetica, arial;
+    margin: 0px;
+}
+
+.feedback_msg {
+    color: red;
+    font-size: 20px;
+    margin: 0px;
+    text-align: left;
+}
+
+.all_messages {
+    color: #707070;
+    font-size: 20px;
+}
+
+.eachLink {
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 6px;
+    width: 400px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: white;
+}
+
+.eachLink p {
+    margin: 12px;
+}
+
+.eachFirstName {
+    font-weight: bold;
+}
+
+h1 a {
+    color: #707070;
+    font-family: Garamond, arial;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: lighter;
+    margin-left: 65px;
+}
+
+h1 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+a:hover {
+    color: #353B51;
+}
+
+.images {
+    margin-top: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+.imagesSlow {
+    margin-top: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+}
+
+#timer {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 55px;
+    color: #606060;
+}
+
+.description {
+    color: #606060;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.columnDisplay {
+    display: flex;
+    flex-direction: row;
+}
+
+.eachColumnDisplay {
+    flex: auto;
+}
+
+.eachColumnDisplay ul {
+    width: 150px;
+}
+
+div.centerImages {
+    text-align: center;
+}
+
+.formcolumn {
+    display: inline-block;
+    width: 55%;
+}
+
+.eachformcolumn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstname {
+    font-size: 20px;
+    font-weight: lighter;
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+    border: #707070;
+    padding: 15px;
+    border-width: 0.1px;
+    box-shadow: 1px 1px 1px 1px #e1e3e9;
+    margin-top: 7px;
+    font-family: Helvetica, arial;
+    color: #606060;
+    margin-right: 100px;
+}
+
+.share {
+    background: #8BABE7;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: #8BABE7;
+    display: inline-block;
+}
+
+.message {
+    width: 600px;
+    height: 110px;
+    font-size: 20px;
+    margin-top: 2%;
+    border-radius: 10px;
+    color: #606060;
+    border: 0.1px #707070;
+    box-shadow: 1px 1px 1px 1px #e1e3e9;
+    padding: 15px;
+    font-family: Helvetica, arial;
+    position: relative;
+    line-height: 30px;
+    resize: none;
+    font-weight: lighter;
+}
+
+.box {
+    width: 620px;
+    position: relative;
+}
+
+#charValue {
+    color: #707070;
+    font-weight: lighter;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 3px;
+}
+
+.message:focus {
+    border: 1px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    opacity: 0.6;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: 0.6;
+}
+
+::placeholder {
+    opacity: 0.6;
+}
+
+footer {
+    padding: 12px;
+    margin-left: 65px;
+    font-size: 20px;
+    color: #707070;
+    height: 30px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #e1e3e9;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.footer a {
+    color: #707070;
+    text-decoration: none;
+    background: white;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 20px;
+}
+
+.eachfooter {
+    vertical-align: middle;
+}
+
+.twitter {
+    margin-right: 60px;
+}
