@@ -10,6 +10,38 @@
     src: url("../fonts/garamond/GaramondRoman.ttf");
 }
 
+.centerImages img {
+    animation: fadeIn ease 8s;
+    -webkit-animation: fadeIn ease 8s;
+    -moz-animation: fadeIn ease 8s;
+    -o-animation: fadeIn ease 8s;
+    -ms-animation: fadeIn ease 8s;
+}
+@keyframes fadeIn {
+    0% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
 html {
     height: 100%;
     background-image: linear-gradient(to right top, #ffffff, #f8f8f9, #f2f2f4, #ebebee, #e4e5e9, #dadee7, #d0d7e6, #c5d0e4, #b5c6e5, #a6bce6, #96b2e6, #86a8e7);
@@ -83,6 +115,11 @@ a:hover {
     margin-top: 0%;
     width: 100%;
     text-align: center;
+}
+
+.centerImages {
+    transition: background-color 0.5s ease;
+
 }
 
 form {
