@@ -10,39 +10,6 @@
     src: url("../fonts/garamond/GaramondRoman.ttf");
 }
 
-.centerImages img, .images img {
-    animation: fadeIn ease 8s;
-    -webkit-animation: fadeIn ease 8s;
-    -moz-animation: fadeIn ease 8s;
-    -o-animation: fadeIn ease 8s;
-    -ms-animation: fadeIn ease 8s;
-}
-
-@keyframes fadeIn {
-    0% {opacity:0.5;}
-    100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-    0% {opacity:0.5;}
-    100% {opacity:1;}
-}
-
-@-webkit-keyframes fadeIn {
-    0% {opacity:0.5;}
-    100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-    0% {opacity:0.5;}
-    100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
-    0% {opacity:0.5;}
-    100% {opacity:1;}
-}
-
 html {
     height: 100%;
     background-image: linear-gradient(to right top, #ffffff, #f8f8f9, #f2f2f4, #ebebee, #e4e5e9, #dadee7, #d0d7e6, #c5d0e4, #b5c6e5, #a6bce6, #96b2e6, #86a8e7);
@@ -51,15 +18,16 @@ html {
 html, body {
     width: 100%;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     font-family: Helvetica, arial;
     margin: 0px;
 }
 
 .feedback_msg {
     color: red;
-    font-size: 20px;
-    margin: 0px;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: left;
 }
 
@@ -120,7 +88,6 @@ a:hover {
 
 .centerImages {
     transition: background-color 0.5s ease;
-
 }
 
 form {
@@ -186,7 +153,7 @@ div.centerImages {
     padding: 15px;
     border-width: 0.1px;
     box-shadow: 1px 1px 1px 1px #e1e3e9;
-    margin-top: 7px;
+    margin-top: 5px;
     font-family: Helvetica, arial;
     color: #606060;
     margin-right: 100px;
@@ -208,7 +175,7 @@ div.centerImages {
     width: 600px;
     height: 110px;
     font-size: 20px;
-    margin-top: 2%;
+    margin-top: 1.5%;
     border-radius: 10px;
     color: #606060;
     border: 0.1px #707070;
@@ -287,6 +254,8 @@ footer {
     vertical-align: middle;
 }
 
-.twitter {
+a.twitter {
     margin-right: 60px;
+    background-color: #1DA1F2;
+    color: white;
 }

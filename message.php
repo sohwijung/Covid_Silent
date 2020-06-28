@@ -9,18 +9,18 @@ if(isset($_POST["share"])) {
   $first_name = trim(filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_STRING));
   $encouragement = trim(filter_input(INPUT_POST, 'encouragement', FILTER_SANITIZE_STRING));
   if ($first_name == "" && $encouragement == ""){
-    array_push($messages, "Please enter a value for both fields.");
+    array_push($messages, "Please enter a message and preferred name to share.");
   } else if ($first_name == "") {
-    array_push($messages, "Please enter a value for first name.");
+    array_push($messages, "Please enter your name before sharing.");
   } else if ($encouragement == "") {
-    array_push($messages, "Please enter a value for message.");
+    array_push($messages, "Please enter a message to share.");
   } else {
     $sql = "INSERT INTO links (first_name, encouragement) VALUES (:first_name, :encouragement);";
     $params = array(":first_name" => $first_name, "encouragement" => $encouragement);
     $result = exec_sql_query($db , $sql, $params);
 
     if ($result) {
-      array_push($messages, "Successfully uploaded message!");
+      array_push($messages, "Thanks for sharing with the world.");
     }
   }
 }
@@ -88,25 +88,43 @@ if(isset($_POST["share"])) {
     <img class="mySlidesSlow" src="masked_faces/38.jpg">
     <img class="mySlidesSlow" src="masked_faces/39.jpg">
     <img class="mySlidesSlow" src="masked_faces/40.jpg">
+    <img class="mySlidesSlow" src="masked_faces/41.jpg">
+    <img class="mySlidesSlow" src="masked_faces/42.jpg">
+    <img class="mySlidesSlow" src="masked_faces/43.jpg">
+    <img class="mySlidesSlow" src="masked_faces/44.jpg">
+    <img class="mySlidesSlow" src="masked_faces/45.jpg">
+    <img class="mySlidesSlow" src="masked_faces/46.jpg">
+    <img class="mySlidesSlow" src="masked_faces/47.jpg">
+    <img class="mySlidesSlow" src="masked_faces/48.jpg">
+    <img class="mySlidesSlow" src="masked_faces/49.jpg">
+    <img class="mySlidesSlow" src="masked_faces/50.jpg">
+    <img class="mySlidesSlow" src="masked_faces/51.jpg">
+    <img class="mySlidesSlow" src="masked_faces/52.jpg">
+    <img class="mySlidesSlow" src="masked_faces/53.jpg">
+    <img class="mySlidesSlow" src="masked_faces/54.jpg">
+    <img class="mySlidesSlow" src="masked_faces/55.jpg">
+    <img class="mySlidesSlow" src="masked_faces/56.jpg">
+    <img class="mySlidesSlow" src="masked_faces/57.jpg">
+    <img class="mySlidesSlow" src="masked_faces/58.jpg">
+    <img class="mySlidesSlow" src="masked_faces/59.jpg">
+    <img class="mySlidesSlow" src="masked_faces/60.jpg">
     <script>carouselSlow()</script>
   </div>
 
-  <div class="feedback_msg">
-    <?php
-      foreach ($messages as $message) {
-        echo "<p>" . htmlspecialchars($message) . "</p>\n";
-      }
-    ?>
-  </div>
-<!--
-<div class="columnDisplay">
-  <div class="eachColumnDisplay"> -->
   <form method="post">
     <div class ="formcolumn">
       <div class ="eachformcolumn">
+
         <div class="box">
+          <div class="feedback_msg">
+            <?php
+            foreach ($messages as $message) {
+            echo "<p>" . htmlspecialchars($message) . "</p>\n";
+            }
+            ?>
+          </div>
           <label for="encouragement"></label>
-          <textarea name="encouragement" id="encourageMessage" class="message" onKeyUp="countChar()" maxlength="140" placeholder="Please share a word of encouragement"></textarea>
+          <textarea name="encouragement" id="encourageMessage" class="message" onKeyUp="countChar()" maxlength="140" placeholder="Share a word of encouragement"></textarea>
           <div id="charValue" class="charValue"></div>
           <script>countChar();</script>
         </div>
@@ -146,7 +164,9 @@ if(isset($_POST["share"])) {
 
 <div class="footer">
   <div class="eachfooter"><footer>Made with ❤️ by <a href="https://twitter.com/perewaripere" class="link">@pere</a> and <a href="https://www.linkedin.com/in/sohwijung/" class="link">@sohwijung</a></footer></div>
-  <div class="eachfooter"><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.google.com" class="twitter"> Share on Twitter </a></div>
+  <div class="eachfooter">
+  <!-- <img src="images/twitterlogo.png"> -->
+  <a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.google.com" class="twitter">Share on Twitter </a></div>
 </div>
 </body>
 </html>
